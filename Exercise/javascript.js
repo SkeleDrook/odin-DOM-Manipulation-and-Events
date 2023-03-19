@@ -1,3 +1,8 @@
+// place them like document.body.appendChild() and they're placed as children of the <body> element. 
+// Place them as document.head.appendChild(), and you're adding head content.
+// Place them as document.appendChild() and expect some truly funky behavior, as the root
+//  only understands a head and body node.
+
 // const container = document.querySelector('#container') <= Also for existing divs
 
 const paragraph = document.createElement('p')
